@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竹西佳处</title>
+    <style>
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+        header {
+            background-color: #00786c;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background-color: #00786c;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.8rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #00786c;
+            color: white;
+        }
+        h2 {
+            color: #00786c;
+            font-size: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        label, input, textarea {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+        }
+        input[type="submit"] {
+            background-color: #00786c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 1rem;
+        }
+        input[type="submit"]:hover {
+            background-color: #005f56;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+            min-width: 200px;
+            border: 1px solid #ddd;
+        }
+        .dropdown-content a {
+            color: #00786c;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 800px;
+        }
+        .comment-board {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .comment-board h3 {
+            color: #00786c;
+        }
+        .comment-board form {
+            display: flex;
+            flex-direction: column;
+        }
+        .comments {
+            margin-top: 2rem;
+        }
+        .comments .comment {
+            padding: 0.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+        .admin-reply {
+            color: #005f56;
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>竹西佳处</h1>
+        <p>欢迎来到我们的中文学习和文化探讨网站。</p>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <a href="#">研究</a>
+            <div class="dropdown-content">
+                <a href="research/literature/literature.html">文学</a>
+                <a href="research/history/history.html">历史</a>
+                <a href="research/philosophy/philosophy.html">哲学</a>
+                <a href="research/anthropology/anthropology.html">人类学</a>
+                <a href="research/sociology/sociology.html">社会学</a>
+                <a href="research/architecture/architecture.html">建筑学</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">中国語教室</a>
+            <div class="dropdown-content">
+                <a href="chinese_class/hatsuon/hatsuon.html">発音</a>
+                <a href="chinese_class/tangotyou/tangotyou.html">単語帳</a>
+                <a href="chinese_class/benkyuuhouhou/benkyuuhouhou.html">勉強方法</a>
+                <a href="chinese_class/slqm/slqm.html">声律启蒙</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">语言</a>
+            <div class="dropdown-content">
+                <a href="languages/modern_chinese/modern_chinese.html">现代汉语</a>
+                <a href="languages/classical_chinese/classical_chinese.html">古代汉语</a>
+                <a href="languages/japanese/japanese.html">日语</a>
+                <a href="languages/english/english.html">英语</a>
+                <a href="languages/french/french.html">法语</a>
+                <a href="languages/spanish/spanish.html">西班牙语</a>
+                <a href="languages/sanskrit/sanskrit.html">梵语</a>
+                <a href="languages/uyghur/uyghur.html">维吾尔语</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">阅读</a>
+            <div class="dropdown-content">
+                <a href="reading/recommended_books/recommended_books.html">推荐书目</a>
+                <a href="reading/recent_readings/recent_readings.html">近期阅读</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">音乐</a>
+            <div class="dropdown-content">
+                <a href="music/western_music/western_music.html">西域音乐</a>
+                <a href="music/instruments/instruments.html">乐器</a>
+            </div>
+        </div>
+        <a href="references/references.html">参考文献</a>
+    </nav>
+
+    <div class="image-container">
+        <img src="assets/瑞鹤图.jpg" alt="瑞鹤图">
+    </div>
+
+    <section id="courses">
+        <h2>语言概览</h2>
+        <p>探索各种语言：</p>
+        <ul>
+            <li><a href="languages/modern_chinese/modern_chinese.html" style="color:#00786c;">现代汉语</a></li>
+            <li><a href="languages/classical_chinese/classical_chinese.html" style="color:#00786c;">古代汉语</a></li>
+            <li><a href="languages/japanese/japanese.html" style="color:#00786c;">日语</a></li>
+            <li><a href="languages/english/english.html" style="color:#00786c;">英语</a></li>
+            <li><a href="languages/french/french.html" style="color:#00786c;">法语</a></li>
+            <li><a href="languages/spanish/spanish.html" style="color:#00786c;">西班牙语</a></li>
+            <li><a href="languages/sanskrit/sanskrit.html" style="color:#00786c;">梵语</a></li>
+            <li><a href="languages/uyghur/uyghur.html" style="color:#00786c;">维吾尔语</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 竹西佳处 | 版权所有</p>
+    </footer>
+</body>
+</html>
